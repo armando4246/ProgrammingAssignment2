@@ -31,3 +31,10 @@ cacheSolve <- function(x, ...) {
   x$setinverse(m) #Then it gives this variable as an argument for the function setinverse so it can be saved to the variable m thus m is no more NULL
   m #It returns m
 }
+
+##Proving the code works
+M <- makeCacheMatrix(matrix(1:4, 2, 2))
+cacheSolve(M)
+
+S <- makeCacheMatrix(matrix(4:7, 2, 2))
+cacheSolve(S)
